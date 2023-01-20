@@ -1,0 +1,14 @@
+name: Deployment
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: 
+      name: development
+      url: https://github.com
+    steps:
+      - name: deploy
+        run: echo ${environment.name} ${environment.url}
