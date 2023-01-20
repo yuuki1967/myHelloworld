@@ -11,4 +11,4 @@ jobs:
       url: https://github.com
     steps:
       - name: deploy
-        run: echo ${environment.name} ${environment.url}
+        run: echo environment.name environment.url
